@@ -1,13 +1,16 @@
 ---
-const platform = ["Github", "Instagram", "Twitter","LinkedIn"];
-const username = "pranavvraja";
+import Social from "./social.astro";
 ---
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
 
 <footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform[0]}.com/${username}`}>{platform[0]}</a>!</p>
-
-   
-  <p>Check out my <a href={`https://www.${platform[1]}.com/${username}`}>{platform[1]}</a></p>
-  <p>Check out my <a href={`https://www.${platform[2]}.com/${username}`}>{platform[2]}</a></p>
-  <p>Check out my <a href={`https://www.${platform[3]}.com/${username}`}>{platform[3]}</a></p>
+ <Social platform ="Github" username = "pranvvraja"/>
+ <Social platform ="LinkedIn" username = "pranvvraja"/>
+ <Social platform ="Twitter" username = "pranvvraja"/>
 </footer>
